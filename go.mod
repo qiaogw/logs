@@ -1,3 +1,3 @@
-module github.com/qiaogw/log
+module github.com/qiaogw/logs
 
 go 1.15
