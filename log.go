@@ -6,7 +6,6 @@ package logs
 import (
 	"fmt"
 	"os"
-	"path/filepath"
 	"time"
 
 	"github.com/Shopify/sarama"
@@ -154,7 +153,5 @@ func initlogs(mode string, fileName string, maxSize, maxBackups, maxAge int, com
 	// Compress    bool   // 是否压缩
 	// Caller
 
-	dir := filepath.Dir(fileName)
-	fileName = filepath.Join(dir, fileName)
 	Init(mode, fileName, level, false, option...)
 }
